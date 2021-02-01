@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header/>
+        <Header List="3 Terbaik"/>
         <List/>
         <Footer name="Makanan Nusantara" tahun="2021"/>
       </div>
