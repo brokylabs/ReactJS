@@ -5,7 +5,8 @@ class Main extends Component{
         super(props)
         this.state = {
             title : "Menu Makanan",
-            minuman : "Menu Minuman"
+            minuman : "Menu Minuman",
+            minang : "Nasi Padang Nusantara"
         }
         this.ubahData = this.ubahData.bind(this);
         this.handleChange = this.handleChange.bind(this)
@@ -34,7 +35,7 @@ class Main extends Component{
                 <h2>{this.state.minuman}</h2>
                 <button onClick={this.ubahData}>Ubah</button><br></br>
                 <br></br>
-                <input type="text" onChange={this.handleChange}></input>
+                <input type="text" value={this.state.minang} onChange={this.handleChange}></input>
             </div>
         )
     }
