@@ -9,10 +9,15 @@ class Main extends Component{
         this.ubahData = this.ubahData.bind(this);
     };
 
-    ubahData(){
-        this.setState({title : "Pilih Makanan"})
-    }
+    // ubahData(){
+    //     this.setState({title : "Pilih Makanan"})
+    // }
 
+    ubahData(){
+        this.setState((state, props)=>{
+            return{title : "Pilih Menu Makanan"}
+        })
+    }
     render() {
         return(
             <div>
