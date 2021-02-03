@@ -8,6 +8,7 @@ class Main extends Component{
             minuman : "Menu Minuman"
         }
         this.ubahData = this.ubahData.bind(this);
+        this.handleChange = this.handleChange.bind(this)
     };
 
     // ubahData(){
@@ -22,12 +23,18 @@ class Main extends Component{
             }
         })
     }
+
+    handleChange(){
+        console.log("run...");
+    }
     render() {
         return(
             <div>
                 <h3>{this.state.title}</h3>
                 <h2>{this.state.minuman}</h2>
-                <button onClick={this.ubahData}>Ubah</button>
+                <button onClick={this.ubahData}>Ubah</button><br></br>
+                <br></br>
+                <input type="text" onChange={this.handleChange}></input>
             </div>
         )
     }
