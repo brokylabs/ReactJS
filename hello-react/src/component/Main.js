@@ -26,7 +26,18 @@ class Main extends Component{
     }
 
     handleChange(e){
-        console.log(e.target.value);
+        // console.log(e.target.value);
+
+        // Penulisan untuk state tunggal, lebih simple
+        this.setState({ minang : e.target.value}) 
+
+        // Penulisan untuk multiple state
+        // let minangValue = e.target.value;
+        // this.setState((state, props)=>{
+        //     return({
+        //         minang : minangValue
+        //     })
+        // })
     }
     render() {
         return(
