@@ -16,7 +16,12 @@ class Header extends Component {
     alert(value)
   }
 
+  componentDidMount(){
+    console.log("componentDidMount : run...");
+  }
+
     render() {
+      console.log("Render : run...");
       return(
         <div>
           <h2>Makanan Khas Indonesia</h2>
