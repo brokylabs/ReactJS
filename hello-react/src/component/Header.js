@@ -11,9 +11,10 @@ class Header extends Component {
 
   }
 
-  pesanHeader(){
+  pesanHeader(pesan, e){
+    e.preventDefault()
     alert(this.state.dataList)
-    alert("Berhasil Bro!")
+    alert(pesan)
   }
     render() {
       return(
@@ -21,7 +22,7 @@ class Header extends Component {
           <h2>Makanan Khas Indonesia</h2>
           <p>{this.state.daftar}</p>
           <p>{this.state.dataList}</p>
-          <a href="/" onClick={this.pesanHeader}>Pesan Header</a>
+          <a href="/" onClick={(e)=>this.pesanHeader("Pesan dari Header", e)}>Pesan Header</a>
         </div>
       )
     }
