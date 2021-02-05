@@ -6,7 +6,8 @@ class Main extends Component{
         this.state = {
             title : "Menu Makanan",
             minuman : "Menu Minuman",
-            minang : "Nasi Padang Nusantara"
+            minang : "",
+            kota : ""
         }
         this.ubahData = this.ubahData.bind(this);
         this.handleChange = this.handleChange.bind(this)
@@ -25,11 +26,11 @@ class Main extends Component{
         })
     }
 
-    handleChange(e){
+    handleChange(inputValue, e){
         // console.log(e.target.value);
 
         // Penulisan untuk state tunggal, lebih simple
-        this.setState({ minang : e.target.value}) 
+        this.setState({ [inputValue] : e.target.value}) 
 
         // Penulisan untuk multiple state
         // let minangValue = e.target.value;
@@ -46,7 +47,8 @@ class Main extends Component{
                 <h2>{this.state.minuman}</h2>
                 <button onClick={this.ubahData}>Ubah</button><br></br>
                 <br></br>
-                <input type="text" value={this.state.minang} onChange={this.handleChange}></input>
+                <input type="text" value={this.state.minang} onChange={(e)=>this.handleChange("minang", e)}></input>
+                <input type="text" value={this.state.kota} onChange={(e)=>this.handleChange("kota", e)}></input>
             </div>
         )
     }
