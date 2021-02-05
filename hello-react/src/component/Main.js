@@ -11,7 +11,14 @@ class Main extends Component{
     }
 
     ubahMenu(){
-        this.setState({ menuMakanan : "Menu Makanan Nusantara"})
+        // this.setState({ menuMakanan : "Menu Makanan Nusantara"})
+
+        this.setState((state, props)=>{
+            return({
+                menuMakanan : state.menuMinuman,
+                menuMinuman : state.menuMakanan
+            })
+        })
     }
 
     render(){
