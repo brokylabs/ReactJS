@@ -5,7 +5,8 @@ class Header extends Component {
     super(props);
     this.state = {
       daftar : "Daftar makanan Nusantara",
-      dataList : this.props.List
+      dataList : this.props.List,
+      fromHeader : "Pesan dari Header"
     };
     this.pesanHeader = this.pesanHeader.bind(this)
 
@@ -16,13 +17,15 @@ class Header extends Component {
     alert(this.state.dataList)
     alert(pesan)
   }
+
     render() {
       return(
         <div>
           <h2>Makanan Khas Indonesia</h2>
           <p>{this.state.daftar}</p>
           <p>{this.state.dataList}</p>
-          <a href="/" onClick={(e)=>this.pesanHeader("Pesan dari Header", e)}>Pesan Header</a>
+
+          <a href="/" onClick={(e)=>this.pesanHeader(this.state.fromHeader, e)}>Pesan Header</a>
         </div>
       )
     }
