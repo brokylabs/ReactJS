@@ -1,22 +1,5 @@
 import React, { Component } from 'react';
-let menuMakanan = [
-    {
-        nama : "Sate padang",
-        harga : 15000
-    },
-    {
-        nama : "Sate Klatak Jogjakarta",
-        harga : 50000
-    },
-    {
-        nama : "Sate Ayam",
-        harga : 15000
-    },
-    {
-        nama : "Sate Ayam Madura",
-        harga : 20000
-    }
-]
+import menuMakanan from "./lib/Food"
 class Main extends Component{
     constructor(props){
         super(props)
