@@ -59,7 +59,7 @@ class Main extends Component{
         // })
     }
     render() {
-        return (
+        return(
             <div>
                 <h3>{this.state.title}</h3>
                 <h2>{this.state.minuman}</h2>
@@ -69,10 +69,10 @@ class Main extends Component{
                 <input type="text" value={this.state.kota} onChange={(e)=>this.handleChange("kota", e)}></input>
 
                 {this.state.menuMakanan.map((value, index)=>{
-                    return (
+                    return(
                         <div key={index}>
                         <p>No : {index +1}</p>
-                        <p>Makanan : {value.makanan}</p>
+                        <p>Makanan : {value.nama}</p>
                         <p>Harga : {value.harga}</p>
                     </div>
                     )
