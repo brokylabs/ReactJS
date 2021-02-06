@@ -9,6 +9,7 @@ class Header extends Component {
       statusRender : false
     };
     this.handlePesan = this.handlePesan.bind(this)
+    this.handleElement = this.handleElement.bind(this)
   }
 
   handlePesan(value, e){
@@ -20,7 +21,18 @@ class Header extends Component {
   componentDidMount(){
     console.log("componentDidMount : run...");
   }
+
+  handleElement(){
+    this.setState((state, props)=>{
+      return({
+        statusRender : !state.statusRender
+      })
+    })
+  }
+
   render() {
+    // console.log("render : Run...");
+    console.log(this.state.statusRender);
     return(
       <div>
         {this.state.statusRender === true ? (
@@ -34,6 +46,7 @@ class Header extends Component {
             <h2>Jangan Lupa Datang Lagi</h2>
           </div>
         )}
+        <button onClick={this.handleElement}>Change</button>
       </div>
     )
   }
