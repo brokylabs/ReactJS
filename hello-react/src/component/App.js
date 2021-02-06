@@ -10,24 +10,7 @@ class App extends Component {
       <div>
         <Header List="3 Terbaik"/>
         <Top/>
-        <Main menuMakanan= {[
-                {
-                    nama : "Sate padang",
-                    harga : 15000
-                },
-                {
-                    nama : "Sate Klatak Jogja",
-                    harga : 50000
-                },
-                {
-                    nama : "Sate Ayam",
-                    harga : 15000
-                },
-                {
-                    nama : "Sate Ayam Madura",
-                    harga : 20000
-                }
-            ]} />
+        <Main/>
         {/* <List/> */}
         <Footer name="Makanan Nusantara" tahun="2021"/>
       </div>
