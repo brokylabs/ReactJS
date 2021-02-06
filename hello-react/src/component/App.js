@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from "./Header"
 import Footer from "./Footer"
-import List from "./List"
+// import List from "./List"
 import Top from "./Top"
 import Main from "./Main"
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
         <Header List="3 Terbaik"/>
         <Top/>
         <Main/>
-        <List/>
+        {/* <List/> */}
         <Footer name="Makanan Nusantara" tahun="2021"/>
       </div>
     )
