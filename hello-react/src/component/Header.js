@@ -42,7 +42,7 @@ class Header extends Component {
           </div>
         ): (
           <div>
-            <h1>Selamat Tinggal</h1>
+            <h1 style={{color:"navajowhite", backgroundColor:"olivedrab", marginTop:"100px"}}>Selamat Tinggal</h1>
             <h2>Jangan Lupa Datang Lagi</h2>
           </div>
         )}
