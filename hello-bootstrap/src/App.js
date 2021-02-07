@@ -54,7 +54,9 @@ class App extends Component {
         </h3>
         <Button variant="primary">Profile <Badge variant="light-8">8</Badge></Button>
       </Col>
-      <Col>Col 3</Col>
+      <Col>
+        <Button variant="danger">Expired</Button>
+      </Col>
       </Row>
     </Container>
   );
