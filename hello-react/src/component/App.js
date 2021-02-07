@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Header from "./Header"
 import Top from "./Top"
 // import Main from "./Main"
-import Form from "./Form"
+// import Form from "./Form"
+import CustomInput from "./CustomInput"
 // import List from "./List"
 import Footer from "./Footer"
 
@@ -13,8 +14,9 @@ class App extends Component {
       <div>
         <Header List="3 Terbaik"/>
         <Top/>
-        <Form/>
+        {/* <Form/> */}
         {/* <Main/> */}
+        <CustomInput />
         {/* <List/> */}
         <Footer name="Makanan Nusantara" tahun="2021"/>
       </div>
