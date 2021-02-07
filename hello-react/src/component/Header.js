@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+let judul = {
+  color: "navajowhite",
+  backgroundColor : "olivedrab",
+  marginTop : "100px"
+}
 
 class Header extends Component {
   constructor(props){
@@ -37,13 +42,13 @@ class Header extends Component {
       <div>
         {this.state.statusRender === true ? (
           <div>
-            <h1>Selamat Datang</h1>
-            <h2>Silahkan Pilih Makanan</h2>
+            <h1 style={{color:"navajowhite", backgroundColor:"olivedrab", marginTop:"100px"}}>Selamat Datang</h1>
+            <h2 style={judul}>Silahkan Pilih Makanan</h2>
           </div>
         ): (
           <div>
             <h1 style={{color:"navajowhite", backgroundColor:"olivedrab", marginTop:"100px"}}>Selamat Tinggal</h1>
-            <h2>Jangan Lupa Datang Lagi</h2>
+            <h2 style={judul}>Jangan Lupa Datang Lagi</h2>
           </div>
         )}
         <button onClick={this.handleElement}>Change</button>
