@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb } from "react-bootstrap"
+import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar } from "react-bootstrap"
 
 class App extends Component {
   render(){
@@ -56,6 +56,21 @@ class App extends Component {
       </Col>
       <Col>
         <Button variant="danger">Expired</Button>
+        <ButtonToolbar>
+          <ButtonGroup className="mr-2">
+            <Button>Previews</Button>
+          </ButtonGroup>
+          
+          <ButtonGroup className="mr-2">
+            <Button>1</Button>
+            <Button>2</Button>
+            <Button>3</Button>
+            <Button>4</Button>
+          </ButtonGroup>
+          <ButtonGroup className="mr-2">
+          <Button>Next</Button>
+          </ButtonGroup>
+        </ButtonToolbar>
       </Col>
       </Row>
     </Container>
