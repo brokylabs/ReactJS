@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Media } from "react-bootstrap"
+import { Container, Row, Col, Media, Alert } from "react-bootstrap"
 
 class App extends Component {
   render(){
@@ -41,7 +41,9 @@ class App extends Component {
         </Col>
       </Row>
       <Row>
-      <Col>Col 1</Col>
+      <Col>
+        <Alert variant="primary">Anda Telah Berhasil Login</Alert>
+      </Col>
       <Col>Col 2</Col>
       <Col>Col 3</Col>
       </Row>
