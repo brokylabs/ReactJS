@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./Header.css"
 let judul = {
   color: "navajowhite",
   backgroundColor : "olivedrab",
@@ -47,8 +48,8 @@ class Header extends Component {
           </div>
         ): (
           <div>
-            <h1 style={{color:"navajowhite", backgroundColor:"olivedrab", marginTop:"100px"}}>Selamat Tinggal</h1>
-            <h2 style={judul}>Jangan Lupa Datang Lagi</h2>
+            <h1 id="JudulKedua">Selamat Tinggal</h1>
+            <h2>Jangan Lupa Datang Lagi</h2>
           </div>
         )}
         <button onClick={this.handleElement}>Change</button>
