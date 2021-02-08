@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card, Carousel } from "react-bootstrap"
+import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card, Carousel, Dropdown } from "react-bootstrap"
 
 class App extends Component {
   render(){
@@ -100,7 +100,7 @@ class App extends Component {
         </ButtonToolbar>
       </Col>
       </Row>
-
+      <br></br>
       <Row>
         <Col>
           <Card style={{width:"18em"}}>
@@ -112,7 +112,16 @@ class App extends Component {
             </Card.Body>
           </Card>
         </Col>
-        <Col>Col 2</Col>
+        <Col>
+          <Dropdown>
+            <Dropdown.Toggle variant="danger">Pilih Menu</Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="/">Sate Ayam</Dropdown.Item>
+              <Dropdown.Item href="/">Sate Kambing</Dropdown.Item>
+              <Dropdown.Item href="/">Sate Klatak</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Col>
         <Col>Col 3</Col>
       </Row>
     </Container>
