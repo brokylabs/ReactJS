@@ -1,6 +1,6 @@
 import React from 'react';
 import "semantic-ui-css/semantic.min.css"
-import { Grid, Button, Container, Divider } from "semantic-ui-react";
+import { Grid, Button, Container, Divider, Flag } from "semantic-ui-react";
 
 function App() {
   return (
@@ -29,7 +29,10 @@ function App() {
           <Button secondary>Sign In</Button>
           <Button basic color="green">Forgot Password</Button>
         </Grid.Column>
-        <Grid.Column>2</Grid.Column>
+        <Grid.Column>
+          <Flag name="id"></Flag>
+          <Flag name="ps"></Flag>
+        </Grid.Column>
         <Grid.Column>3</Grid.Column>
       </Grid>
       
