@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card } from "react-bootstrap"
+import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card, Carousel } from "react-bootstrap"
 
 class App extends Component {
   render(){
@@ -9,6 +9,30 @@ class App extends Component {
         <Breadcrumb.Item ahref="/">Home</Breadcrumb.Item>
         <Breadcrumb.Item ahref="/page">Page</Breadcrumb.Item>
       </Breadcrumb>
+      <Carousel>
+        <Carousel.Item>
+            <img className="d-block w-100" src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel1.jpeg"></img>
+            <Carousel.Caption>
+              <h3>Pesawat Murah</h3>
+              <p>Tiket Pesawat Murah Bro!</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img className="d-block w-100" src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel2.png"></img>
+            <Carousel.Caption>
+              <h3>Pesawat Murah</h3>
+              <p>Tiket Pesawat Murah Bro!</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img className="d-block w-100" src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel3.jpeg"></img>
+            <Carousel.Caption>
+              <h3>Pesawat Murah</h3>
+              <p>Tiket Pesawat Murah Bro!</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+      <br></br>
       <Row>
         <Col>
           <Media>
@@ -87,7 +111,7 @@ class App extends Component {
         </Col>
         
         <Col>
-        Col 2
+          Col 2
         </Col>
         <Col>Col 3</Col>
       </Row>
