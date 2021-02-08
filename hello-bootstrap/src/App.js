@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card, Carousel, Dropdown } from "react-bootstrap"
+import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card, Carousel, Dropdown, Form } from "react-bootstrap"
 
 class App extends Component {
   render(){
@@ -119,6 +119,32 @@ class App extends Component {
               <Dropdown.Item href="/">Sate Klatak</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
+          <br></br>
+          <Form>
+            <Form.Group>
+              <Form.Label>Nama</Form.Label>
+              <Form.Control type="text" placeholder="Masukan Nama Anda"></Form.Control>
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Label>Email</Form.Label>
+              <Form.Control type="email" placeholder="Masukan Email "></Form.Control>
+              <Form.Text className="text-muted">Kami tidak akan menyalahgunakan Email anda.</Form.Text>
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Masukan Password"></Form.Control>
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Check type="checkbox" label="Ingatkan Saya"></Form.Check>
+            </Form.Group>
+
+            <Form.Group>
+              <Button variant="success" type="submit">Signin</Button>
+            </Form.Group>
+          </Form>
         </Col>
         <Col>Col 3</Col>
       </Row>
