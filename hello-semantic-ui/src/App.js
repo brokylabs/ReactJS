@@ -1,13 +1,16 @@
 import React from 'react';
 import "semantic-ui-css/semantic.min.css"
-import { Button } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 
 function App() {
   return (
     <div>
-      <h2>Hello Semantic UI</h2>
-      <Button primary>Button Pertama</Button>
-      <Button secondary>Button Kedua</Button>
+      
+      <Grid container columns={3}>
+        <Grid.Column>1</Grid.Column>
+        <Grid.Column>2</Grid.Column>
+        <Grid.Column>3</Grid.Column>
+      </Grid>
     </div>
   );
 }
