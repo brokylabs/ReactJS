@@ -1,6 +1,6 @@
 import React from 'react';
 import "semantic-ui-css/semantic.min.css"
-import { Grid, Button, Container } from "semantic-ui-react";
+import { Grid, Button, Container, Divider } from "semantic-ui-react";
 
 function App() {
   return (
@@ -20,6 +20,8 @@ function App() {
       <Container textAlign="justified">
       MAMP: Alternatif XAMPP untuk pengguna MacOS – Buat Kanca IT yang sedang belajar web development pasti tidak asing dengan localhost atau local server yang berjalan di PC / Laptop kita. Beberapa dari kanca IT mungkin sudah banyak mendengar software XAMPP. Ya, XAMPP adalah software untuk local server yang sudah umum digunakan, terutama pengguna windows. Pada dasarnya XAMMP bersifat cross-platform, yang artinya bisa digunakan di Windows, Linux dan MacOS.
       </Container>
+      <Divider horizontal>Batas</Divider>
+      <Divider horizontal>-</Divider>
       <br></br>
       <Grid container columns={3}>
         <Grid.Column>
