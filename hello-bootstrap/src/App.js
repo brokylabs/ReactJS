@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar } from "react-bootstrap"
+import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card } from "react-bootstrap"
 
 class App extends Component {
   render(){
@@ -72,6 +72,21 @@ class App extends Component {
           </ButtonGroup>
         </ButtonToolbar>
       </Col>
+      </Row>
+
+      <Row>
+        <Col>
+          <Card style={{width:"18em"}}>
+            <Card.Img variant="top" src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/sate.png"></Card.Img>
+            <Card.Body>
+              <Card.Title>Sate Klatak</Card.Title>
+              <Card.Text>Sate Klatak adalah Sate khas jogja, dan itu favorit gw</Card.Text>
+              <Button variant="success">Buy</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>Col 2</Col>
+        <Col>Col 3</Col>
       </Row>
     </Container>
   );
