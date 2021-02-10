@@ -42,6 +42,8 @@ function App() {
       <Container textAlign="center">
         <Icon name="sync" loading size="large"></Icon>
       </Container>
+
+      <Image src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" size="small" href="https://google.com/" target="_blank"></Image>
       
     </div>
   );
