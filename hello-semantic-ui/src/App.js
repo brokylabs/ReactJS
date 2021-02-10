@@ -1,6 +1,6 @@
 import React from 'react';
 import "semantic-ui-css/semantic.min.css"
-import { Grid, Button, Container, Divider, Flag, Header, Image } from "semantic-ui-react";
+import { Grid, Button, Container, Divider, Flag, Header, Image, Icon } from "semantic-ui-react";
 
 function App() {
   return (
@@ -37,9 +37,11 @@ function App() {
           <Header as="h2" color="olive">
           <Image src="https://react.semantic-ui.com/images/avatar/large/patrick.png"></Image>
             Catur Hidayat</Header>
-          
         </Grid.Column>
       </Grid>
+      <Container textAlign="center">
+        <Icon name="sync" loading size="large"></Icon>
+      </Container>
       
     </div>
   );
