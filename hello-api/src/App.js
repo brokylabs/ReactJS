@@ -32,6 +32,8 @@ class App extends Component {
               {/* <ul>
                 <li > */}
                   <p>{dat.id} : {dat.title} </p>
+                  <p>{dat.title}</p>
+
                 {/* </li>
               </ul> */}
             </div>
