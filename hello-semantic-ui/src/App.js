@@ -1,6 +1,6 @@
 import React from 'react';
 import "semantic-ui-css/semantic.min.css"
-import { Grid, Button, Container, Divider, Flag, Header, Image, Icon, Input } from "semantic-ui-react";
+import { Grid, Button, Container, Divider, Flag, Header, Image, Icon, Input, Label } from "semantic-ui-react";
 
 function App() {
   return (
@@ -46,6 +46,7 @@ function App() {
       <Image src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" size="small" href="https://google.com/" target="_blank"></Image>
 
       <Input type="text" placeholder="Search User" icon={<Icon name="user"></Icon>}></Input>
+      <Label as="a" image pointing="left"><img src="https://react.semantic-ui.com/images/avatar/small/stevie.jpg"></img> Rina Pratiwi</Label>
       
     </div>
   );
