@@ -6,6 +6,19 @@ class App extends Component {
     this.state = {
       dataApi : []
     }
+    this.handleRemove = this.handleRemove.bind(this)
+  }
+
+  handleReload(){
+    axios.get("http://localhost:3005/posts").then(res => {
+        this.setState({ dataApi : res.data })
+        // console.log(res.data);
+      })
+  }
+
+  handleRemove(e){
+    console.log(e.target.value);
+    fetch(`http://localhost:3005/posts/${e.target.value}`, {method : "DELETE" }).then(res => this.handleReload())
   }
 
   componentDidMount(){
@@ -15,11 +28,8 @@ class App extends Component {
     //     this.setState({ dataApi : res })
     //     console.log(res);
     //   })
-
-      axios.get("https://jsonplaceholder.typicode.com/posts").then(res => {
-        this.setState({ dataApi : res.data })
-        // console.log(res.data);
-      })
+    this.handleReload()
+      
 
   }
   render () {
@@ -33,6 +43,7 @@ class App extends Component {
                 <li > */}
                   <p>{dat.id} : {dat.title} </p>
                   <p>{dat.title}</p>
+                  <button value={dat.id} onClick={this.handleRemove}>Hapus Item</button>
 
                 {/* </li>
               </ul> */}

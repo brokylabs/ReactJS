@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "id": 4,
+      "title": "json-server",
+      "body": "Klaten"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
