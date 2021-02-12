@@ -1,9 +1,29 @@
 {
   "posts": [
     {
-      "id": 4,
-      "title": "json-server",
-      "body": "Klaten"
+      "id": 1613126887923,
+      "title": "Klaten",
+      "body": "Rina Pratiwi"
+    },
+    {
+      "id": 1613126927233,
+      "title": "Klaten",
+      "body": "Ita Noer"
+    },
+    {
+      "id": 1613126970576,
+      "title": "Jogja",
+      "body": "Sate Klatak"
+    },
+    {
+      "id": 1613127072938,
+      "title": "Purbalingga",
+      "body": "Catur Hidayat"
+    },
+    {
+      "id": 1613127084050,
+      "title": "Niomic",
+      "body": "ReactJS "
     }
   ],
   "comments": [],
