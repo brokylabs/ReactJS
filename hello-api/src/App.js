@@ -12,7 +12,6 @@ class App extends Component {
         body : ""
       }
     }
-    // this.handleRemove = this.handleRemove.bind(this)
   }
 
   handleReload = () => {
