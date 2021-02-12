@@ -17,7 +17,11 @@ class App extends Component {
 
   handleReload = () => {
     axios.get("http://localhost:3005/posts").then(res => {
-        this.setState({ dataApi : res.data })
+        this.setState({ 
+          dataApi : res.data, 
+          // Opsi 1
+          editData : false 
+         })
         // console.log(res.data);
       })
   }
@@ -88,11 +92,13 @@ class App extends Component {
           .then(res => {
             this.handleReload()
             this.clearInput()
-          }).then(() => {
-            this.setState({
-              editData : false
-            })
           })
+          // Opsi 2
+          // .then(() => {
+          //   this.setState({
+          //     editData : false
+          //   })
+          // })
       }     
   }
 
