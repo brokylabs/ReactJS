@@ -68,7 +68,7 @@ class App extends Component {
   postData = () => {
     // axios.post(`http://localhost:3005/posts`, this.state.dataPost)
     //   .then(res  => { this.handleReload()})
-    // console.log("add data");
+    
 
     if(this.state.editData === false){
       axios({
