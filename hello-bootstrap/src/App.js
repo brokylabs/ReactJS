@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card, Carousel, Dropdown, Form, InputGroup, FormControl } from "react-bootstrap"
+import { Container, Row, Col, Media, Alert, Badge, Button, Breadcrumb, ButtonGroup, ButtonToolbar, Card, Carousel, Dropdown, Form, InputGroup, FormControl, Image } from "react-bootstrap"
 
 class App extends Component {
   render(){
@@ -152,7 +152,9 @@ class App extends Component {
               <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
             </InputGroup.Prepend>
             <FormControl placeholder="Username" arial-label="Username" arial-aria-describedby="basic-addon1"></FormControl>
-          </InputGroup>
+          </InputGroup><br></br>
+
+          <Image src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/foodsmall.jpg" roundedCircle></Image>
         </Col>
       </Row>
     </Container>
